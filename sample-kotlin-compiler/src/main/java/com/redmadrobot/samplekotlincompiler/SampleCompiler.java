@@ -125,7 +125,7 @@ public class SampleCompiler extends AbstractProcessor {
 
         try {
             Writer w = processingEnv.getFiler()
-                    .createResource(SOURCE_OUTPUT, classGeneratingParams.getPackage(),
+                    .createResource(SOURCE_OUTPUT, classGeneratingParams.getPackageNme(),
                             classGeneratingParams.getSimpleFileName())
                     .openWriter();
 
